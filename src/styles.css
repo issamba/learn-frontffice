@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/font-awesome/css/font-awesome.css';
+.publication-container {
+  width: 800px;
+}
+.new-comment{
+  height: 120px;
+  width: 700px;
+}
+
+.publication {
+  width: 800px;
+  background-color: #ceaaaa;
+  height: fit-content;
+  min-height: 100px;
+  border: 1px solid #125699;
+  /*padding: 50px;*/
+  /*margin: 20px;*/
+}
+
+.commentaire-container {
+  width: 750px;
+}
+.commentaire {
+  background-color: powderblue;
+  width: 750px;
+  height: fit-content;
+  border: 1px solid #125699;
+  /*padding: 50px;*/
+  /*margin: 20px;*/
+}
+.main-show-side-navbar {
+  position: absolute;
+  padding-left: 300px;
+  Top: 10%;
+  width:100%;
+}

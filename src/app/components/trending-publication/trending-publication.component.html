@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="mb-1">
+    <div *ngFor="let publication  of publications" class="publication-container">
+
+      <div class="publication mb-2">
+
+
+        <div class="row ">
+          <div class="col col-4"><strong>Créateur : </strong>{{publication.nomCreateur}} </div>
+
+          <div class="col col-4"><strong> Catégorie :</strong> {{publication.libelleCategorie}}  </div>
+
+          <div class="col col-4"><strong>Type :</strong> {{publication.libelleType}}</div>
+
+        </div>
+
+        <div class="row mb-5"><span> {{publication.enonce}}</span></div>
+      </div>
+
+      <div>
+        <button class="btn btn-primary" style="float: right" (click)="showPublication(publication.idPublication)">Voir</button>
+      </div>
+    </div>
+  </div>
+</div>

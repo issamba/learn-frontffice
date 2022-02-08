@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ConnectedUserService} from "./services/connected-user.service";
+import {ConnectedUser} from "./models/ConnectedUser";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'learn-frontend';
+  connectedUser = new ConnectedUser();
+
+  constructor(private connectedUserService: ConnectedUserService) {
+    this.connectedUserService.connectedUser$.subscribe(r => {
+      this.connectedUser = r;
+    })
+  }
+
+
 }
